@@ -14,7 +14,7 @@ public abstract class Ser {
     public void setTamanho(float tamanho) {
         this.tamanho = tamanho;
     }
-    private List<Ser> filhos = new ArrayList<>();
+    private List<Ser> filhos = new ArrayList<Ser>();
     private Ilha nasceu;
     private FrutaDoDiabo fruta;
     private HakiEnum haki;
