@@ -3,7 +3,7 @@ package br.eng.corsini.onepiece_en;
 public class RoadPoneglyph extends Poneglyph{
     private String displayedCoordinate;
     public void locateOnePiece(RoadPoneglyph r){
-        if(r.getMessage() == "You found the true coordinate of OnePiece!"){
+        if(r.getMessage() == "You have found the true coordinate of One Piece!"){
             r.setDisplayedCoordinate("1999 N, 1997 W");
         }
     }

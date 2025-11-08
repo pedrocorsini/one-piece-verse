@@ -3,10 +3,9 @@ package br.eng.corsini.onepiece_ptbr;
 public class HomemPeixe extends Ser{
     private String tipo;
     private float velocidadeAgua;
-    public float dobrarVelocidade(HomemPeixe peixe){
+    public void dobrarVelocidade(HomemPeixe peixe){
         if(peixe.getAltura() > 2.0f)
-            return velocidadeAgua * 2.0f;
-        return velocidadeAgua;
+            peixe.setVelocidadeAgua(peixe.getVelocidadeAgua() * 2);
     }
     public String getTipo() {
         return tipo;
