@@ -5,6 +5,7 @@ public class Pirate extends Being{
     private Ship ship;
     private String title;
     private PirateCrew crew;
+    private String function;
     private State state = new Common();
     public double multiplyBounty(Pirate p, double v){
         return p.getBounty()*v;
@@ -42,6 +43,12 @@ public class Pirate extends Being{
     }
     public void setState(State state) {
         this.state = state;
+    }
+    public String getFunction() {
+        return function;
+    }
+    public void setFunction(String function) {
+        this.function = function;
     }
 
 }

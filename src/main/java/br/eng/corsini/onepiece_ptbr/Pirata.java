@@ -5,6 +5,7 @@ public class Pirata extends Ser{
     private Embarcacao embarcacao;
     private String titulo;
     private TripulacaoPirata tripulacao;
+    private String funcao;
     private Estado estado = new Comum();
     public double multiplicarRecompensa(Pirata p, double v){
         return p.getRecompensa()*v;
@@ -44,5 +45,11 @@ public class Pirata extends Ser{
     }
     public void setEstado(Estado estado) {
         this.estado = estado;
+    }
+    public String getFuncao() {
+        return funcao;
+    }
+    public void setFuncao(String funcao) {
+        this.funcao = funcao;
     }
 }
